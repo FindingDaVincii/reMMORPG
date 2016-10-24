@@ -1,0 +1,18 @@
+{
+  "name": "remmorpg",
+  "version": "0.0.1",
+  "description": "recode project",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Sleeper",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "mocha": "^3.1.2"
+  }
+}
