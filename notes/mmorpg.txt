@@ -1,0 +1,30 @@
+so where to begin?
+some site testing with js disabled:
+
+173 requests | 2.9MB transferred | Finish: 2.15s | DOMLoad: 859ms | Load: 2.11s
+
+biggest area for improvement are as follows: for html/css
+combining images to sprites and optimizing
+cleaner page structure, get rid of the bloat
+get rid of inline styles unless you change them later with js
+condense styles into 1 stylesheet if possible
+remove tons of inline js script that is everywhere (32kb worth!!!)
+
+
+1. we are going to start by blocking out page structure into basic divs and give them names
+from doing this block out, with php you can really think of each section as its own little module
+
+so like news would be a module
+then you would have dev blogs
+top voted games
+screenshots
+so we could do something like
+$this->load->view('module') in our controller
+but this would also require us to hack up the html into pieces
+but we really don't want to have to split up and start determining
+the layout of the content such as controlling the col-s that divdes the main content
+you wan tthis to be done on the front end reguardless of the backend stuff
+its necessary separation
+
+so we can have x moudles in a given section, then in view just load in
+what modules we want in each section.
